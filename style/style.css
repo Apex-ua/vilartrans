@@ -1,0 +1,341 @@
+/* Color Palette
+#2B2D42 - dark blue
+#8D99AE - light blue
+#EDF2F4 - blue/white
+#EF233C - red
+*/
+
+/* 
+font-family: 'Cinzel', serif;
+font-family: 'Roboto Condensed', sans-serif;
+*/
+
+
+/* Global styles
+-------------------------*/
+/* apply a natural box layout model to all elements, but allowing components to change */
+html {
+    box-sizing: border-box;
+}
+*, *:before, *:after {
+    box-sizing: inherit;
+}
+body {
+    font-family: 'Open Sans', sans-serif;
+    margin: 0;
+}
+
+h1, h2, h3 {
+    margin: 0;
+    padding: 0;
+    font-family: 'Roboto Condensed', sans-serif;
+}
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+a {
+    text-decoration: none;
+}
+a:hover {
+    text-decoration: none;
+}
+
+a:link, a:visited {
+    text-decoration: none;
+    /* color: white; */
+}
+
+
+.block {  }
+
+.block_navbar {
+    /* top: 0; */
+    background-color: rgba(0, 0, 0, 0.5);
+}
+
+
+.block_header {
+    background: url('/images/prague-800x523.jpg');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    filter:brightness(90%);
+}
+
+.block__wrapper {
+    max-width: 1100px;
+    margin: 0 auto;
+}
+
+.upper {
+    top: 0;
+    /* background-color: rgba(0, 0, 0, 0.5); */
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: nowrap;
+    height: 50px;
+    width: 100%;
+    /* padding: 0 20px; */
+}
+
+.logo-container {
+    /* padding: 10px; */
+    min-width: 140px;
+}
+
+.logo-vilar {
+    font-family: 'Anton', sans-serif;
+    font-size: 30px;
+}
+
+.logo-link {
+    color:gold;
+}
+
+.logo-link:hover {
+    color: white;
+}
+
+.navigation {}
+
+.navigation__list {
+    list-style-type: none;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    font-family: 'Roboto Condensed', sans-serif;
+    font-size: 18px;
+}
+.navigation__item {
+    padding: 10px;
+    color: white;
+    text-transform: uppercase;
+}
+.navigation__item:hover {
+    color: gold;
+}
+.navigation__item_current {
+    color: gold;
+}
+
+.header {
+    height: 80vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+
+}
+.header__text {
+    /* width: 100%; */
+}
+.header__h1 {
+    font-size: 50px;
+    color: white;
+    padding: 20px;
+    border-radius: 10px;
+    background-color: rgba(0, 0, 0, 0.5);
+    margin-bottom: 20px;
+}
+
+.routes {
+    margin: 50px auto 50px auto;
+    /* width: 1200px; */
+    /* background-color: cadetblue; */
+}
+
+.routes__heading {
+    font-size: 40px;
+    text-align: center;
+    margin-bottom: 50px;
+}
+
+.routes__list {
+    display: grid;
+    column-gap: 10px;
+    row-gap: 10px;
+    grid-template-columns: 1fr 1fr;
+}
+.routes-card {
+    height: 300px;
+    width: 100%;
+    border-radius: 10px;
+    font-size: 30px;
+    transition-property: font-size;
+    transition-duration: .2s;
+    transition-delay: .2s;
+}
+
+.routes-card:hover {
+    font-size: 38px;
+}
+
+.routes-card__image {
+    display: block;
+    width: 100%;
+}
+.routes-card__link {
+    display: block;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.routes-card__heading {
+    color: white;
+    background-color: rgba(250, 212, 0, 0.8);
+    display: block;
+    width: 100%;
+    text-align: center;
+}
+
+.routes-card {
+
+}
+
+.routes-card_prague {
+    background: no-repeat center/100% url('/images/prague.jpg');
+}
+.routes-card_kyiv {
+    background: no-repeat center/100% url('/images/kyiv.jpg');
+}
+.routes-card_pilsen {
+    background: no-repeat center/100% url('/images/pilsen.jpg');
+}
+.routes-card_cherkasy {
+    background: no-repeat center/100% url('/images/cherkasy.jpg');
+}
+
+.route-list__item {
+
+}
+
+
+.footer {
+    background-color: #040f64;
+    font-family: 'Roboto Condensed', sans-serif;
+}
+.footer__wrapper {
+    height: 260px;
+    width: 100%;
+    max-width: 1440px;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    flex-direction: column;
+}
+.footer__link {
+    color: #fff;
+    font-size: 18px;
+    font-weight: bold;
+}
+.footer__link:not(:first-child) {
+    margin-left: 20px;
+}
+.footer__copyright {
+    color: #fff;
+    font-size: 14px; 
+}
+
+.partners {}
+.partner__list {
+    list-style-type: none;
+    /* border: 3px solid red; */
+}
+.partner__item {
+    display: inline;
+    margin-right: 20px;
+}
+.partner__link {
+
+}
+.partner__logo {
+    width: 120px;
+    vertical-align: middle;
+    display: inline-block;
+}
+
+.contacts__heading {
+    margin-top: 20px;
+    text-align: center;
+}
+.contacts__map {
+    margin: 20px 0 20px 0;
+    height: 400px;
+    width: 100%;
+    background: no-repeat center/100% url('/images/map-office.png');
+}
+.map__google {
+    border: 0;
+    height: 400px;
+    width: 100%;
+}
+
+.heading{
+    margin-top: 20px;
+}
+.heading__icon {
+    display: inline-block;
+    font-size: 30px; 
+    color: gold;
+}
+.heading__text {
+    display: inline-block;
+    font-size: 30px; 
+}
+
+.contacts__list {
+    display: grid;
+    column-gap: 10px;
+    row-gap: 10px;
+    grid-template-columns: 1fr 1fr;
+    margin-bottom: 20px;
+}
+.contacts__item {
+    text-align: center;
+    border-radius: 10px;
+    border: 3px solid gold;
+}
+.contacts__data {
+    font-size: 20px; 
+}
+.contacts__link {
+    text-decoration: none;
+    color: black;
+}
+
+/* GALLERY */
+
+.gallery {
+    margin: 30px 0 30px 0;
+}
+.gallery__heading {
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.gallery__description {
+    text-align: center;
+}
+.gallery__list {
+    display: grid;
+    column-gap: 10px;
+    row-gap: 10px;
+    grid-template-columns: 1fr 1fr;
+    margin-bottom: 20px;
+}
+
+.gallery__item{
+    
+}
+.gallery__image {
+    display: block;
+    width: 100%;
+    border-radius: 10px;
+}
