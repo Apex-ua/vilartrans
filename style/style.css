@@ -58,7 +58,7 @@ a:link, a:visited {
 
 
 .block_header {
-    background: url('/images/prague-800x523.jpg');
+    background: url('../images/prague-800x523.jpg');
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
@@ -199,16 +199,16 @@ a:link, a:visited {
 }
 
 .routes-card_prague {
-    background: no-repeat center/100% url('/images/prague.jpg');
+    background: no-repeat center/100% url('../images/prague.jpg');
 }
 .routes-card_kyiv {
-    background: no-repeat center/100% url('/images/kyiv.jpg');
+    background: no-repeat center/100% url('../images/kyiv.jpg');
 }
 .routes-card_pilsen {
-    background: no-repeat center/100% url('/images/pilsen.jpg');
+    background: no-repeat center/100% url('../images/pilsen.jpg');
 }
 .routes-card_cherkasy {
-    background: no-repeat center/100% url('/images/cherkasy.jpg');
+    background: no-repeat center/100% url('../images/cherkasy.jpg');
 }
 
 .route-list__item {
@@ -269,7 +269,7 @@ a:link, a:visited {
     margin: 20px 0 20px 0;
     height: 400px;
     width: 100%;
-    background: no-repeat center/100% url('/images/map-office.png');
+    background: no-repeat center/100% url('../images/map-office.png');
 }
 .map__google {
     border: 0;
