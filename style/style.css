@@ -284,10 +284,19 @@ a:link, a:visited {
     display: inline-block;
     font-size: 30px; 
     color: gold;
+    width: 40px;
+    text-align: center;
+}
+.heading__icon_small {
+    font-size: 24px;
 }
 .heading__text {
     display: inline-block;
     font-size: 30px; 
+}
+.heading__text_small {
+    font-size: 24px; 
+    font-weight: lighter;
 }
 
 .contacts__list {
@@ -314,6 +323,7 @@ a:link, a:visited {
 
 .gallery {
     margin: 30px 0 30px 0;
+    text-align: center;
 }
 .gallery__heading {
     text-align: center;
@@ -338,4 +348,27 @@ a:link, a:visited {
     display: block;
     width: 100%;
     border-radius: 10px;
+}
+
+.description {
+    
+}
+.description__item {
+    font-size: 20px;
+    margin-top: 10px;
+
+}
+
+.service {
+    text-align: center;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+.servise__item {
+    padding-right: 20px;
+}
+.service__heading {
+   margin-top: 30px; 
+   font-size: 28px;
 }
