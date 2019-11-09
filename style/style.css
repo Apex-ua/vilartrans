@@ -53,7 +53,8 @@ a:link, a:visited {
 
 .block_navbar {
     /* top: 0; */
-    background-color: rgba(0, 0, 0, 0.5);
+    /* background-color: rgba(0, 0, 0, 0.5); */
+    background-color: #7f7f7f;
 }
 
 
@@ -358,6 +359,7 @@ a:link, a:visited {
 .service {
     text-align: center;
     display: flex;
+    flex-direction: column;
     flex-wrap: wrap;
     justify-content: center;
 }
@@ -432,4 +434,9 @@ a:link, a:visited {
 }
 .heading_small{
     font-size: 30px;
+}
+
+
+.about {
+    height: 70vh;
 }
