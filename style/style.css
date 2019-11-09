@@ -261,10 +261,6 @@ a:link, a:visited {
     display: inline-block;
 }
 
-.contacts__heading {
-    margin-top: 20px;
-    text-align: center;
-}
 .contacts__map {
     margin: 20px 0 20px 0;
     height: 400px;
@@ -277,24 +273,24 @@ a:link, a:visited {
     width: 100%;
 }
 
-.heading{
+.iconed-heading{
     margin-top: 20px;
 }
-.heading__icon {
+.iconed-heading__icon {
     display: inline-block;
     font-size: 30px; 
     color: gold;
     width: 40px;
     text-align: center;
 }
-.heading__icon_small {
+.iconed-heading__icon_small {
     font-size: 24px;
 }
-.heading__text {
+.iconed-heading__text {
     display: inline-block;
     font-size: 30px; 
 }
-.heading__text_small {
+.iconed-heading__text_small {
     font-size: 24px; 
     font-weight: lighter;
 }
@@ -303,13 +299,13 @@ a:link, a:visited {
     display: grid;
     column-gap: 10px;
     row-gap: 10px;
-    grid-template-columns: 1fr 1fr;
-    margin-bottom: 20px;
+    grid-template-columns: 1fr 1fr 1fr;
+    margin: 0 0 20px 0;
+    border: 3px solid gold;
+    border-radius: 10px;
 }
 .contacts__item {
     text-align: center;
-    border-radius: 10px;
-    border: 3px solid gold;
 }
 .contacts__data {
     font-size: 20px; 
@@ -371,4 +367,69 @@ a:link, a:visited {
 .service__heading {
    margin-top: 30px; 
    font-size: 28px;
+}
+
+
+/*----------------TICKETS-----------------*/
+.tickets {
+    text-align: center;
+}
+.tickets__heading {
+    margin: 30px 0; 
+    font-size: 28px;
+}
+.tickets__description{
+    margin-bottom: 30px;
+}
+.iframe {
+    display: flex;
+    justify-content: center;
+}
+
+.office-services{
+    text-align: center;
+    margin-bottom: 30px;
+}
+.office-services__list{
+    font-size: 20px;
+}
+.office-services__item{
+    margin: 10px 0 10px 0;
+}
+
+.find-office{
+    margin-bottom: 30px;
+}
+.contacts-gallery{
+    display: flex;
+    /* grid-template-columns: 1fr 1fr;
+    grid-template-rows: 400px; */
+    height: 400px;
+    justify-content: center;
+}
+.contacts-gallery__link{}
+.contacts-gallery__item{
+    display: inline-block;
+    height: 100%;
+    border-radius: 10px;
+}
+.contacts-gallery__item:not(:last-child) {
+    margin-right: 30px;
+
+}
+
+
+/*------- heading ---------*/
+.heading {
+    text-align: center;
+    margin: 20px auto;
+}
+.heading_big{
+    font-size: 40px;
+}
+.heading_medium{
+    font-size: 35px;
+}
+.heading_small{
+    font-size: 30px;
 }

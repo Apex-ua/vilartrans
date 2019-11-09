@@ -28,13 +28,13 @@
                                 <a href="./index.html" class="navigation__item">Головна</a>
                             </li>
                             <li>
-                                <a href="#" class="navigation__item">Придбати квиток</a>
+                                <a href="./tickets.html" class="navigation__item">Придбати квиток</a>
                             </li>
                             <li>
                                 <a href="./buses.html" class="navigation__item">Наші автобуси</a>
                             </li>
                             <li>
-                                <a href="#" class="navigation__item">Про компанію</a>
+                                <a href="./about.html" class="navigation__item">Про компанію</a>
                             </li>
                             <li>
                                 <a href="./contacts.html" class="navigation__item navigation__item_current">Контакти</a>
@@ -49,7 +49,7 @@
         <div class="block">
             <div class="block__wrapper">
                 <div class="contacts">
-                    <h1 class="contacts__heading">Контакти</h1>
+                    <h1 class="heading heading_big">Контакти</h1>
                     <div class="contacts__map">
                         <iframe class="map__google"
                             src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2559.756195705962!2d14.440816815314713!3d50.09085137942732!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x470b94bda9bf2cf7%3A0x126ccfd4ce2111f4!2sOrlan%20Ltd.!5e0!3m2!1suk!2sua!4v1572781220314!5m2!1suk!2sua"
@@ -57,53 +57,69 @@
                     </div>
                     <div class="contacts__list">
                         <div class="contacts__item">
-                            <div class="heading">
-                                <span class="heading__icon">
+                            <div class="iconed-heading">
+                                <span class="iconed-heading__icon">
                                     <i class="fas fa-map-marked-alt"></i>
                                 </span>
-                                <h3 class="heading__text">Адреса:</h3>
+                                <h3 class="iconed-heading__text">Адреса:</h3>
                             </div>
                             <div class="contacts__data">
                                 <p>Křižíkova 140/23, 186 00 Praha 8-Karlín, Чехія</p>
                             </div>
                         </div>
                         <div class="contacts__item">
-                            <div class="heading">
-                                <span class="heading__icon">
+                            <div class="iconed-heading">
+                                <span class="iconed-heading__icon">
+                                    <i class="fas fa-mobile-alt"></i>
+                                </span>
+                                <h3 class="iconed-heading__text">Телефони</h3>
+                            </div>
+                            <div class="contacts__data">
+                                <p><a class="contacts__link" href="tel: +420775517375">+420 775 517 375 (Чехія)</a></p>
+                            </div>
+                            <div class="contacts__data">
+                                <p><a class="contacts__link" href="tel: +420234290655">+420 234 290 655 (Чехія)</a></p>
+                            </div>
+                            <div class="contacts__data">
+                                <p><a class="contacts__link" href="tel: +380684977245">+38 068 497 72 45 (Україна)</a></p>
+                            </div>
+                        </div>
+                        <div class="contacts__item">
+                            <div class="iconed-heading">
+                                <span class="iconed-heading__icon">
                                     <i class="fas fa-envelope"></i>
                                 </span>
-                                <h3 class="heading__text">Напишіть нам:</h3>
+                                <h3 class="iconed-heading__text">Напишіть нам:</h3>
                             </div>
                             <div class="contacts__data">
                                 <p><a class="contacts__link" href="mailto: vilartrans-ticket@sezam.cz">vilartrans-ticket@sezam.cz</a></p>
+                                <p><a class="contacts__link" href="mailto: vilartransof@gmail.com">vilartransof@gmail.com</a></p>
                             </div>
                         </div>
-                        <div class="contacts__item">
-                            <div class="heading">
-                                <span class="heading__icon">
-                                    <i class="fas fa-mobile-alt"></i>
-                                </span>
-                                <h3 class="heading__text">Телефон в Україні:</h3>
-                            </div>
-                            <div class="contacts__data">
-                                <p><a class="contacts__link" href="tel: +380972610709">+38 097 261 07 09</a></p>
-                            </div>
-                        </div>
-                        <div class="contacts__item">
-                            <div class="heading">
-                                <span class="heading__icon">
-                                    <i class="fas fa-mobile-alt"></i>
-                                </span>
-                                <h3 class="heading__text">Телефон в Чехії:</h3>
-                            </div>
-                            <div class="contacts__data">
-                                <p><a class="contacts__link" href="tel: +420775517375">+42 077 551 73 75</a></p>
-                            </div>
-                        </div>
-
-                        
                     </div>
                 </div>
+                <div class="office-services">
+                    <h3 class="heading heading_small">У нашому офісі доступні наступні послуги:</h3>
+                    <ul class="office-services__list">
+                        <li class="office-services__item">Придбання квитків</li>
+                        <li class="office-services__item">Замовлення довідки про несудимість</li>
+                        <li class="office-services__item">Юридичні консультації</li>
+                        <li class="office-services__item">Допомога в працевлаштуванні</li>
+                        <li class="office-services__item">Медичне та інші види страхування</li>
+                        <li class="office-services__item">Доставка негабаритного багажу</li>
+                    </ul>    
+                </div>
+                <!-- <picture>
+                    <img src="./images/vilartrans-office.jpeg" alt="Фото вивіски офісу Vilartrans в Празі">
+                </picture> -->
+
+                <section class="find-office"> 
+                    <h2 class="heading heading_small">Як знайти офіс:</h3>
+                    <div class="contacts-gallery">
+                        <img src="./images/vilartrans-office.jpeg" alt="Фото вивіски офісу Vilartrans в Празі" class="contacts-gallery__item">
+                        <img src="./images/vilartrans-office1.jpeg" alt="Фото вивіски офісу Vilartrans в Празі" class="contacts-gallery__item">
+                    </div>
+                </section>
 
             </div>
         </div>
@@ -114,7 +130,7 @@
             <div class="footer__wrapper">
                 <nav class="footer__nav">
                     <a class="footer__link" href="./buses.html">Наші автобуси</a>
-                    <a class="footer__link" href="./about-us">Про компанію</a>
+                    <a class="footer__link" href="./about.html">Про компанію</a>
                     <a class="footer__link" href="./contacts.html">Контакти</a>
                 </nav>
                 <div class="footer__partners">

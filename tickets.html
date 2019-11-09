@@ -24,16 +24,16 @@
                     <nav class="navigation">
                         <ul class="navigation__list">
                             <li>
-                                <a href="./index.html" class="navigation__item navigation__item_current">Головна</a>
+                                <a href="./index.html" class="navigation__item">Головна</a>
                             </li>
                             <li>
-                                <a href="./tickets.html" class="navigation__item">Придбати квиток</a>
+                                <a href="./tickets.html" class="navigation__item navigation__item_current">Придбати квиток</a>
                             </li>
                             <li>
                                 <a href="./buses.html" class="navigation__item">Наші автобуси</a>
                             </li>
                             <li>
-                                <a href="./about.html" class="navigation__item">Про компанію</a>
+                                <a href="#" class="navigation__item">Про компанію</a>
                             </li>
                             <li>
                                 <a href="./contacts.html" class="navigation__item">Контакти</a>
@@ -43,47 +43,32 @@
                 </div>
             </div>
         </div>
-        <div class="block block_header">
-            <div class="block__wrapper">
-                <div class="header">
-                    <div class="header__text">
-                        <h1 class="header__h1">Надійний перевізник для вашої подорожі</h1>
-                    </div>
-                </div>
-            </div>
-        </div>
     </header>
     <main>
         <section>
             <div class="block">
                 <div class="block__wrapper">
-                    <div class="routes">
-                        <h2 class="routes__heading">Наші рейси</h3>
-                            <div class="routes__list">
-                                <div class="routes-card routes-card_prague">
-                                    <a href="#" class="routes-card__link">
-                                        <h3 class="routes-card__heading">Київ-Прага</h3>
-                                    </a>
-                                </div>
-                                <div class="routes-card routes-card_kyiv">
-                                    <a href="#" class="routes-card__link">
-                                        <h3 class="routes-card__heading">Прага-Київ</h3>
-                                    </a>
-                                </div>
-                                <div class="routes-card routes-card_pilsen">
-                                    <a href="#" class="routes-card__link">
-                                        <h3 class="routes-card__heading">Черкаси-Пльзень</h3>
-                                    </a>
-                                </div>
-                                <div class="routes-card routes-card_cherkasy">
-                                    <a href="#" class="routes-card__link">
-                                        <h3 class="routes-card__heading">Пльзень-Черкаси</h3>
-                                    </a>
-                                </div>
-                            </div>
+                    <section class="tickets">
+                        <h1 class="tickets__heading">Пошук квитків на маршрути Vilartrans</h1>
+                        <p class="tickets__description">    
+                            Щоб придбати квиток на наші маршрути скористайтеся формою пошуку нижче, 
+                            оберіть пункти відправлення і прибуття, тип поїздки - в одну сторону або в дві сторони, 
+                            оберіть дату, зручну валюту і переходьте до пошуку.
+                        </p>
+                    </section>
+                    <div class="iframe">
+                        <iframe src="https://ws.bussystem.eu/booking?lang=ua&theme=start&dispatcher=424&no_akce=1&only=bus&period=6" 
+                            frameborder="0" 
+                            marginwidth="0" 
+                            marginheight="0" 
+                            width="750px" 
+                            height="2000px"
+                        >
+                        </iframe>
                     </div>
                 </div>
-            </div>
+            </div>    
+
         </section>
     </main>
     <footer>
@@ -120,17 +105,3 @@
 </body>
 
 </html>
-
-
-<!-- <li>
-    <a href="#" class="navigation__item">Київ-Прага</a>
-</li>
-<li>
-    <a href="#" class="navigation__item">Прага-Київ</a>
-</li>
-<li>
-    <a href="#" class="navigation__item">Черкаси-Пльзень</a>
-</li>
-<li>
-    <a href="#" class="navigation__item">Пльзень-Черкаси</a>
-</li> -->
