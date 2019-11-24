@@ -73,18 +73,16 @@ a:link, a:visited {
 
 .upper {
     top: 0;
-    /* background-color: rgba(0, 0, 0, 0.5); */
     display: flex;
     align-items: center;
     justify-content: space-between;
     flex-wrap: nowrap;
     height: 50px;
     width: 100%;
-    /* padding: 0 20px; */
 }
 
 .logo-container {
-    /* padding: 10px; */
+    padding: 5px;
     min-width: 140px;
 }
 
@@ -439,4 +437,65 @@ a:link, a:visited {
 
 .about {
     height: 70vh;
+}
+
+
+.testImg {
+    background-image: url("../images/svg/icon\ logo_purple.svg");
+    background-size: contain;
+}
+
+.icon__image {
+    height: 25px;
+    /* width: 35px; */
+}
+.icon__text {
+    height: 45px;
+    line-height: 45px;
+    text-align: center;
+}
+.icon__test {
+    background-image: url("../images/svg/whatsapp-logo.svg");
+    background-repeat: no-repeat;
+    background-size: auto 35px;
+    display: block;
+    height: 35px;
+    width: 35px;
+    padding-right: 0;
+    overflow: hidden;
+}
+.icon__test_viber {
+    background-image: url("../images/svg/viber-logo.png");
+    background-repeat: no-repeat;
+    background-size: auto 35px;
+    display: block;
+    height: 35px;
+    width: 35px;
+    padding-right: 0;
+    overflow: hidden;
+}
+
+.telephone{
+    display: flex;
+    align-items: center;
+    
+}
+.telephone__messengers{
+    margin-right: 10px;
+}
+.telephone__link{
+    font-size: 22px;
+    color: black;
+    vertical-align: middle;
+}
+.telephone__country{
+    margin-left: 10px;
+}
+
+.messengers__icon{
+    height: 25px;
+    display: inline-block;
+}
+.country__icon{
+    height: 20px;
 }
