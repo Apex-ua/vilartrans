@@ -1,0 +1,22 @@
+{
+  "name": "vilartrans",
+  "version": "1.0.0",
+  "description": "",
+  "main": "gulpfile.js",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Apex-ua/vilartrans.git"
+  },
+  "author": "Ivan Etk",
+  "license": "ISC",
+  "homepage": "https://github.com/Apex-ua/vilartrans#readme",
+  "devDependencies": {
+    "browser-sync": "^2.26.7",
+    "del": "^5.1.0",
+    "gulp": "^4.0.2",
+    "gulp-concat": "^2.6.1",
+    "gulp-imagemin": "^6.2.0",
+    "gulp-sass": "^4.0.2",
+    "node-sass": "^4.13.0"
+  }
+}
