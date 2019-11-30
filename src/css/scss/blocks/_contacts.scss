@@ -1,0 +1,21 @@
+.contacts{
+    &__list {
+        display: grid;
+        column-gap: 10px;
+        row-gap: 10px;
+        grid-template-columns: 1fr 1fr 1fr;
+        margin: 0 0 20px 0;
+        border: 3px solid gold;
+        border-radius: 10px;
+    }
+    &__item {
+        text-align: center;
+    }
+    &__data {
+        font-size: 20px; 
+    }
+    &__link {
+        text-decoration: none;
+        color: black;
+    }
+}

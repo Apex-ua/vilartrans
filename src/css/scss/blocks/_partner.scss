@@ -1,0 +1,15 @@
+.partner {
+    &__list {
+        list-style-type: none;
+    }
+    &__item {
+        display: inline;
+        margin-right: 20px;
+    }
+    // &_link {}
+    &__logo {
+        width: 120px;
+        vertical-align: middle;
+        display: inline-block;
+    }
+}

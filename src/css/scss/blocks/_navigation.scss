@@ -1,0 +1,22 @@
+.navigation{
+    &__list {
+        list-style-type: none;
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: wrap;
+        font-family: 'Roboto Condensed', sans-serif;
+        font-size: 18px;
+    }
+    &__item {
+        padding: 10px;
+        color: $nav_link;
+        text-transform: uppercase;
+        &_current {
+            color: $nav_link_current;
+        }
+        &:hover {
+            color: $nav_link_hover;
+        }
+    }
+}
+

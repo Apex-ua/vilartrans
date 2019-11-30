@@ -33,12 +33,17 @@ a {
         text-decoration: none;
     }
 }
-// a:hover {
-//     text-decoration: none;
-// }
 
-
-// a:link, a:visited {
-//     text-decoration: none;
-//     /* color: white; */
-// }
+.heading {
+    text-align: center;
+    margin: 20px auto;
+    &_big{
+        font-size: 40px;
+    }
+    &_medium{
+        font-size: 35px;
+    }
+    &_small{
+        font-size: 30px;
+    }
+}

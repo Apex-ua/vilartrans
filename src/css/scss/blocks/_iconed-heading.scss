@@ -1,0 +1,22 @@
+
+.iconed-heading{
+    margin-top: 20px;
+    &__icon {
+        display: inline-block;
+        font-size: 30px; 
+        color: gold;
+        width: 40px;
+        text-align: center;
+    }
+    &__icon_small {
+        font-size: 24px;
+    }
+    &__text {
+        display: inline-block;
+        font-size: 30px; 
+    }
+    &__text_small {
+        font-size: 24px; 
+        font-weight: lighter;
+    }
+}

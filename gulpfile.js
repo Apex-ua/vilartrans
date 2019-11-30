@@ -79,7 +79,7 @@ function server(cb) {
 }
 
 // exports.default = series(clean, parallel(html, css, js), server, watcher);
-exports.default = series(clean, parallel(html, css, cname, images), server, watcher);
+exports.default = series(clean, parallel(html, css, cname), images, server, watcher);
 
 
 

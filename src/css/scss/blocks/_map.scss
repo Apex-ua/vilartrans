@@ -1,0 +1,11 @@
+.map{
+    margin: 20px 0 20px 0;
+    height: 400px;
+    width: 100%;
+    background: no-repeat center/100% url('../images/map-office.png');
+    &__google {
+        border: 0;
+        height: 400px;
+        width: 100%;
+    }
+}

@@ -1,0 +1,20 @@
+.logo{
+    &-container {
+        padding: 5px;
+        min-width: 140px;
+    }
+    
+    &-vilar {
+        font-family: 'Anton', sans-serif;
+        font-size: 30px;
+    }
+    
+    &-link {
+        color: $logo_link;
+    }
+    
+    &-link:hover {
+        color: $logo_link_hover;
+    }
+}
+
