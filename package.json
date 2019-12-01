@@ -10,13 +10,18 @@
   "author": "Ivan Etk",
   "license": "ISC",
   "homepage": "https://github.com/Apex-ua/vilartrans#readme",
+  "scripts": {
+    "deploy": "push-dir --dir=build --branch=gh-pages; gh-pages -d dist"
+  },
   "devDependencies": {
     "browser-sync": "^2.26.7",
     "del": "^5.1.0",
+    "gh-pages": "^2.1.1",
     "gulp": "^4.0.2",
     "gulp-concat": "^2.6.1",
     "gulp-imagemin": "^6.2.0",
     "gulp-sass": "^4.0.2",
-    "node-sass": "^4.13.0"
+    "node-sass": "^4.13.0",
+    "push-dir": "^0.4.1"
   }
 }
