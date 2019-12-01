@@ -1,10 +1,11 @@
-const {src, dest, series, parallel, watch} = require('gulp');
+const {src, dest, series, parallel, watch, task} = require('gulp');
 const del = require('del');
 const browserSync = require('browser-sync').create();
 const sass = require('gulp-sass');
 const imagemin = require('gulp-imagemin');
-const concat = require('gulp-concat');
-const ghPages = require('gulp-gh-pages');
+// const concat = require('gulp-concat');
+const ghPages = require('gh-pages');
+const path = require('path');
 // const babel= require('gulp-babel');
 
 const origin = 'src';
@@ -79,12 +80,12 @@ function server(cb) {
   cb();
 }
 
-function deploy(cb){
-  src(`./${destination}/**/*.*`)
-  .pipe(ghPages());
-  cb();
+function deploy(cb) {
+  ghPages.publish(path.join(process.cwd(), './build'), cb);
 }
+// exports.deploy = deploy;
  
+// task('deploy', () => src(`./${destination}/**/*`).pipe(ghPages()));
 
 // exports.default = series(clean, parallel(html, css, js), server, watcher);
 exports.deploy = deploy;
