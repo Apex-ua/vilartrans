@@ -38,8 +38,13 @@ a {
   .heading_small {
     font-size: 30px; }
 
-.block_navbar {
-  background-color: #7f7f7f; }
+.block_upper {
+  background-color: #5fba4f;
+  top: 0;
+  position: fixed;
+  width: 100%;
+  height: 60px;
+  z-index: 1; }
 
 .block_header {
   background: url("../images/prague-800x523.jpg");
@@ -52,45 +57,62 @@ a {
   max-width: 1100px;
   margin: 0 auto; }
 
+.block_under-nav {
+  margin-top: 60px; }
+
 .upper {
-  top: 0;
   display: flex;
   align-items: center;
   justify-content: space-between;
   flex-wrap: nowrap;
-  height: 50px;
-  width: 100%; }
+  height: 60px; }
 
-.logo-container {
-  padding: 5px;
-  min-width: 140px; }
+.logo {
+  margin-left: 10px;
+  min-width: 180px; }
 
-.logo-vilar {
-  font-family: 'Anton', sans-serif;
-  font-size: 30px; }
-
-.logo-link {
-  color: gold; }
-
-.logo-link:hover {
-  color: white; }
-
-.navigation__list {
-  list-style-type: none;
+.navigation {
+  width: 100vw;
+  min-width: 300px;
+  height: 95vh;
+  position: fixed;
+  top: 60px;
+  right: 0;
+  bottom: 0;
+  left: -1000px;
+  background-color: #7f7f7f;
+  transition: left 0.5s ease-in-out;
   display: flex;
-  justify-content: space-between;
-  flex-wrap: wrap;
-  font-family: 'Roboto Condensed', sans-serif;
-  font-size: 18px; }
-
-.navigation__item {
-  padding: 10px;
-  color: white;
-  text-transform: uppercase; }
-  .navigation__item_current {
-    color: gold; }
-  .navigation__item:hover {
-    color: gold; }
+  align-items: center;
+  justify-content: center;
+  z-index: 2; }
+  @media only screen and (min-width: 820px) {
+    .navigation {
+      width: 100%;
+      height: 60px;
+      position: static;
+      background-color: transparent;
+      justify-content: flex-end; } }
+  .navigation__list {
+    list-style-type: none;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    font-family: 'Roboto Condensed', sans-serif;
+    font-size: 25px; }
+    @media only screen and (min-width: 820px) {
+      .navigation__list {
+        flex-direction: row;
+        font-size: 22px; } }
+  .navigation__item {
+    padding: 10px;
+    color: white;
+    text-transform: uppercase; }
+    .navigation__item_current {
+      color: gold; }
+    .navigation__item:hover {
+      color: gold; }
 
 .header {
   height: 80vh;
@@ -98,12 +120,15 @@ a {
   justify-content: center;
   align-items: center; }
   .header__h1 {
-    font-size: 50px;
+    font-size: 30px;
     color: white;
     padding: 20px;
     border-radius: 10px;
     background-color: rgba(0, 0, 0, 0.5);
     margin-bottom: 20px; }
+    @media only screen and (min-width: 820px) {
+      .header__h1 {
+        font-size: 45px; } }
 
 .routes {
   margin: 50px auto 50px auto; }
@@ -115,7 +140,10 @@ a {
     display: grid;
     column-gap: 10px;
     row-gap: 10px;
-    grid-template-columns: 1fr 1fr; }
+    grid-template-columns: 1fr; }
+    @media only screen and (min-width: 820px) {
+      .routes__list {
+        grid-template-columns: 1fr 1fr; } }
   .routes-card {
     height: 300px;
     width: 100%;
@@ -216,10 +244,14 @@ a {
   display: grid;
   column-gap: 10px;
   row-gap: 10px;
-  grid-template-columns: 1fr 1fr 1fr;
-  margin: 0 0 20px 0;
+  grid-template-columns: 1fr;
+  margin: 10px;
   border: 3px solid gold;
   border-radius: 10px; }
+  @media only screen and (min-width: 820px) {
+    .contacts__list {
+      grid-template-columns: 1fr 1fr 1fr;
+      margin: 0 0 20px 0; } }
 
 .contacts__item {
   text-align: center; }
@@ -270,17 +302,18 @@ a {
   .office-services__item {
     margin: 10px 0 10px 0; }
 
-.contacts-gallery {
-  display: flex;
-  height: 400px;
-  justify-content: center;
-  margin-bottom: 30px; }
-  .contacts-gallery__item {
-    display: inline-block;
+.find-us {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-gap: 10px; }
+  @media only screen and (min-width: 820px) {
+    .find-us {
+      grid-template-columns: 1fr 1fr; } }
+  .find-us__image {
+    width: 100%;
     height: 100%;
+    object-fit: cover;
     border-radius: 10px; }
-  .contacts-gallery__item:not(:last-child) {
-    margin-right: 30px; }
 
 .tickets {
   text-align: center; }
@@ -296,3 +329,25 @@ a {
 .description__item {
   font-size: 20px;
   margin-top: 10px; }
+
+#toggle {
+  position: absolute;
+  clip: rect(0, 0, 0, 0); }
+
+#toggle:checked ~ .navigation {
+  left: 0; }
+
+@media only screen and (min-width: 820px) {
+  .burger {
+    display: none; } }
+
+.burger__container {
+  margin-right: 10px; }
+
+.burger__line {
+  display: block;
+  width: 22px;
+  height: 2px;
+  border-radius: 1px;
+  background: #fff;
+  margin-bottom: 5px; }

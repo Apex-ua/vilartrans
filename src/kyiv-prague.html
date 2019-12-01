@@ -30,18 +30,23 @@
 
 <body>
     <header>
-        <div class="block block_navbar">
+        <div class="block block_upper">
             <div class="block__wrapper">
                 <div class="upper">
-                    <div class="logo-container">
-                        <div class="logo-vilar">
-                            <a href="./index.html" class="logo-link">VILARTRANS</a>
-                        </div>
-                    </div>
+                    <div class="logo">
+                        <a href="./index.html" class="logo__link">
+                            <div class="logo__image">
+                                <img src="./images/svg/vilartrans-logo.svg" 
+                                alt="Логотип міжнародного автобусного перевізника Vilartrans" 
+                                title="Логотип Vilartrans">
+                            </div>
+                        </a>
+                    </div>   
+                    <input type='checkbox' id='toggle'></input>
                     <nav class="navigation">
                         <ul class="navigation__list">
                             <li>
-                                <a href="./index.html" class="navigation__item navigation__item_current">Головна</a>
+                                <a href="./index.html" class="navigation__item">Головна</a>
                             </li>
                             <li>
                                 <a href="./tickets.html" class="navigation__item">Придбати квиток</a>
@@ -54,6 +59,13 @@
                             </li>
                         </ul>
                     </nav>
+                    <div class="burger__container">
+                        <label for='toggle' class='burger'>
+                            <span class="burger__line"></span>
+                            <span class="burger__line"></span>
+                            <span class="burger__line"></span>   
+                        </label>
+                    </div>
                 </div>
             </div>
         </div>

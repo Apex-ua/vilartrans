@@ -4,11 +4,14 @@
     justify-content: center;
     align-items: center;
     &__h1 {
-        font-size: 50px;
+        font-size: 30px;
         color: white;
         padding: 20px;
         border-radius: 10px;
         background-color: rgba(0, 0, 0, 0.5);
         margin-bottom: 20px;
+        @media only screen and (min-width: $medium_devices) {
+            font-size: 45px;
+        }
     }
 }

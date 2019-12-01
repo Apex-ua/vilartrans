@@ -9,7 +9,10 @@
         display: grid;
         column-gap: 10px;
         row-gap: 10px;
-        grid-template-columns: 1fr 1fr;
+        grid-template-columns: 1fr;
+        @media only screen and (min-width: $medium_devices) {
+            grid-template-columns: 1fr 1fr;
+        }
     }
     &-card {
         height: 300px;
