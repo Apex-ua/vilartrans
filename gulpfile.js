@@ -4,6 +4,7 @@ const browserSync = require('browser-sync').create();
 const sass = require('gulp-sass');
 const imagemin = require('gulp-imagemin');
 const concat = require('gulp-concat');
+const ghPages = require('gulp-gh-pages');
 // const babel= require('gulp-babel');
 
 const origin = 'src';
@@ -78,9 +79,13 @@ function server(cb) {
   cb();
 }
 
+function deploy(cb){
+  src(`./${destination}/**/*.*`)
+  .pipe(ghPages());
+  cb();
+}
+ 
+
 // exports.default = series(clean, parallel(html, css, js), server, watcher);
+exports.deploy = deploy;
 exports.default = series(clean, images, parallel(html, css, cname), server, watcher);
-
-
-
-
