@@ -34,7 +34,10 @@
         }
     }
     &__item {
+        min-height: 40px;
         padding: 10px;
+    }
+    &__link {
         color: $nav_link;
         text-transform: uppercase;
         &_current {

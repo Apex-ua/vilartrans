@@ -34,37 +34,34 @@
         <div class="block block_upper">
             <div class="block__wrapper">
                 <div class="upper">
-                    <div class="logo">
-                        <a href="./index.html" class="logo__link">
-                            <div class="logo__image">
-                                <img src="./images/svg/vilartrans-logo.svg" 
-                                alt="Логотип міжнародного автобусного перевізника Vilartrans" 
-                                title="Логотип Vilartrans">
-                            </div>
-                        </a>
-                    </div>   
-                    <input type='checkbox' id='toggle'></input>
+                    <a href="./index.html" class="logo__container">
+                        <img src="./images/svg/vilartrans-logo.svg"
+                            alt="Логотип міжнародного автобусного перевізника Vilartrans" 
+                            title="Логотип Vilartrans"
+                            class="logo__image">
+                    </a> 
+                    <input type='checkbox' id='show-navmenu'></input>
                     <nav class="navigation">
                         <ul class="navigation__list">
-                            <li>
-                                <a href="./index.html" class="navigation__item">Головна</a>
+                            <li class="navigation__item">
+                                <a href="./index.html" class="navigation__link">Головна</a>
                             </li>
-                            <li>
-                                <a href="./tickets.html" class="navigation__item">Придбати квиток</a>
+                            <li class="navigation__item">
+                                <a href="./tickets.html" class="navigation__link">Придбати квиток</a>
                             </li>
-                            <li>
-                                <a href="./buses.html" class="navigation__item navigation__item_current">Наші автобуси</a>
+                            <li class="navigation__item">
+                                <a href="./buses.html" class="navigation__link navigation__link_current">Наші автобуси</a>
                             </li>
-                            <li>
-                                <a href="./contacts.html" class="navigation__item">Контакти</a>
+                            <li class="navigation__item">
+                                <a href="./contacts.html" class="navigation__link">Контакти</a>
                             </li>
                         </ul>
                     </nav>
-                    <div class="burger__container">
-                        <label for='toggle' class='burger'>
-                            <span class="burger__line"></span>
-                            <span class="burger__line"></span>
-                            <span class="burger__line"></span>   
+                    <div class="upper__burger">
+                        <label for='show-navmenu' class='burger__container'>
+                            <div class="burger__line-top"></div>
+                            <div class="burger__line-centre"></div>
+                            <div class="burger__line-bottom"></div>   
                         </label>
                     </div>
                 </div>
@@ -75,7 +72,7 @@
         <div class="block block_under-nav">
             <div class="block__wrapper">
                <div class="gallery">
-                   <h1 class="gallery__heading">Наші автобуси</h1>
+                   <h1 class="heading heading_big">Наші автобуси</h1>
                    <p class="gallery__description">
                         <ul class="description">
                             <li class="description__item">
@@ -88,7 +85,7 @@
                                 Автобуси Vilartrans проходять регулярний техогляд, тому подорожувати з нашою компанією безпечно. 
                             </li>
                         </ul>
-                        <h2 class="service__heading">Сервіси доступні у автобусах</h2>
+                        <h2 class="heading heading_medium">Сервіси доступні у автобусах</h2>
                         <ul class="service">
                             <li class="servise__item">
                                 <div class="iconed-heading">

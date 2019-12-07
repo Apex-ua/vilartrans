@@ -1,23 +1,28 @@
 .footer {
-    background-color: #040f64;
+    background-color: $logo_green_dark;
     font-family: 'Roboto Condensed', sans-serif;
     &__wrapper {
         height: 260px;
         width: 100%;
         max-width: 1440px;
         margin: 0 auto;
+        padding: 0px 10px;
         display: flex;
         align-items: center;
         justify-content: space-evenly;
         flex-direction: column;
     }
+    &__nav {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-wrap: wrap;
+    }
     &__link {
         color: #fff;
         font-size: 18px;
         font-weight: bold;
-        &:not(:first-child) {
-            margin-left: 20px;
-        }
+        padding: 10px;
     }
     &__copyright {
         color: #fff;

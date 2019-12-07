@@ -33,37 +33,34 @@
         <div class="block block_upper">
             <div class="block__wrapper">
                 <div class="upper">
-                    <div class="logo">
-                        <a href="./index.html" class="logo__link">
-                            <div class="logo__image">
-                                <img src="./images/svg/vilartrans-logo.svg" 
-                                alt="Логотип міжнародного автобусного перевізника Vilartrans" 
-                                title="Логотип Vilartrans">
-                            </div>
-                        </a>
-                    </div>   
-                    <input type='checkbox' id='toggle'></input>
+                    <a href="./index.html" class="logo__container">
+                        <img src="./images/svg/vilartrans-logo.svg"
+                            alt="Логотип міжнародного автобусного перевізника Vilartrans" 
+                            title="Логотип Vilartrans"
+                            class="logo__image">
+                    </a> 
+                    <input type='checkbox' id='show-navmenu'></input>
                     <nav class="navigation">
                         <ul class="navigation__list">
-                            <li>
-                                <a href="./index.html" class="navigation__item">Головна</a>
+                            <li class="navigation__item">
+                                <a href="./index.html" class="navigation__link">Головна</a>
                             </li>
-                            <li>
-                                <a href="./tickets.html" class="navigation__item navigation__item_current">Придбати квиток</a>
+                            <li class="navigation__item">
+                                <a href="./tickets.html" class="navigation__link navigation__link_current">Придбати квиток</a>
                             </li>
-                            <li>
-                                <a href="./buses.html" class="navigation__item">Наші автобуси</a>
+                            <li class="navigation__item">
+                                <a href="./buses.html" class="navigation__link">Наші автобуси</a>
                             </li>
-                            <li>
-                                <a href="./contacts.html" class="navigation__item">Контакти</a>
+                            <li class="navigation__item">
+                                <a href="./contacts.html" class="navigation__link">Контакти</a>
                             </li>
                         </ul>
                     </nav>
-                    <div class="burger__container">
-                        <label for='toggle' class='burger'>
-                            <span class="burger__line"></span>
-                            <span class="burger__line"></span>
-                            <span class="burger__line"></span>   
+                    <div class="upper__burger">
+                        <label for='show-navmenu' class='burger__container'>
+                            <div class="burger__line-top"></div>
+                            <div class="burger__line-centre"></div>
+                            <div class="burger__line-bottom"></div>   
                         </label>
                     </div>
                 </div>
@@ -75,7 +72,7 @@
             <div class="block block_under-nav">
                 <div class="block__wrapper">
                     <section class="tickets">
-                        <h1 class="tickets__heading">Пошук квитків на маршрути Vilartrans</h1>
+                        <h1 class="heading heading_big">Пошук квитків на маршрути Vilartrans</h1>
                         <p class="tickets__description">    
                             Щоб придбати квиток на наші маршрути скористайтеся формою пошуку нижче, 
                             оберіть пункти відправлення і прибуття, тип поїздки - в одну сторону або в дві сторони, 

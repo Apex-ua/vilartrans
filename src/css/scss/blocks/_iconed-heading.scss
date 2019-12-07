@@ -4,7 +4,7 @@
     &__icon {
         display: inline-block;
         font-size: 30px; 
-        color: gold;
+        color: $iconed-heading;
         width: 40px;
         text-align: center;
     }
@@ -13,7 +13,7 @@
     }
     &__text {
         display: inline-block;
-        font-size: 30px; 
+        font-size: 2rem;
     }
     &__text_small {
         font-size: 24px; 

@@ -1,29 +1,16 @@
 .logo{
-    margin-left: 10px;
-    min-width: 180px;
-    // &__link{}
-    // &__image{}
+    &__container{
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        height: 45px;
+    }
+    &__image{
+        width: auto;
+        height: 100%;
+        max-width: 100%;
+        max-height: 100%;
+    }
 }
-
-// .logo{
-//     &-container {
-//         padding: 5px;
-//         min-width: 140px;
-//     }
-    
-//     &-vilar {
-//         font-family: 'Anton', sans-serif;
-//         font-size: 30px;
-//     }
-    
-//     &__link {
-//         color: $logo_link;
-//     }
-    
-//     &-link:hover {
-//         color: $logo_link_hover;
-//     }
-// }
-
 
 

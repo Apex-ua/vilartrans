@@ -11,15 +11,13 @@
     @media only screen and (min-width: $medium_devices) {
         display: none;
     }
-    &__container{
-        margin-right: 10px;
-    }
+    // &__container{}
     &__line{
         display: block;
         width: 22px;
         height: 2px;
         border-radius: 1px;
-        background: #fff;
+        background: $logo_green;
         margin-bottom: 5px;
     }
 }

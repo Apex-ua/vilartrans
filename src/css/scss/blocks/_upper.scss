@@ -4,4 +4,12 @@
     justify-content: space-between;
     flex-wrap: nowrap;
     height: 60px;
+    padding: 0px 10px;
+    margin: 0px auto;
+    &__burger {
+        display: flex;
+        @media only screen and (min-width: $medium_devices) {
+            display: none;
+        }
+    }
 }
