@@ -2,6 +2,7 @@ const {src, dest, series, parallel, watch, task} = require('gulp');
 const del = require('del');
 const browserSync = require('browser-sync').create();
 const sass = require('gulp-sass');
+const autoprefixer = require('gulp-autoprefixer');
 const imagemin = require('gulp-imagemin');
 // const concat = require('gulp-concat');
 const ghPages = require('gh-pages');
@@ -36,7 +37,9 @@ function css(cb) {
   .pipe(sass({
     // outputStyle: 'compressed'
   }))
-  
+  .pipe(autoprefixer({
+    cascade: false
+  }))
   .pipe(dest(`${destination}/css`));
 
   cb();
