@@ -35,7 +35,7 @@ function css(cb) {
   src(`${origin}/css/scss/**/*.scss`)
   // .pipe(concat('styles.scss'))
   .pipe(sass({
-    // outputStyle: 'compressed'
+    outputStyle: 'compressed'
   }))
   .pipe(autoprefixer({
     cascade: false

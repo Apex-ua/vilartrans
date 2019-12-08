@@ -1,8 +1,20 @@
 .footer {
-    background-color: $logo_green_dark;
+    &::before {
+        content: "";
+        display: block;
+        background-image: url("../images/svg/land.svg");
+        background-size: contain;
+        background-repeat: no-repeat;
+        background-position: center;
+        height: 110px;
+        @media only screen and (min-width: $medium_devices) {
+            height: 250px;
+        }
+    }
     font-family: 'Roboto Condensed', sans-serif;
     &__wrapper {
-        height: 260px;
+        background-color: $logo_green_dark;
+        height: 220px;
         width: 100%;
         max-width: 1440px;
         margin: 0 auto;
