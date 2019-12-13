@@ -16,7 +16,6 @@
         background-color: $logo_green_dark;
         height: 220px;
         width: 100%;
-        max-width: 1440px;
         margin: 0 auto;
         padding: 0px 10px;
         display: flex;
@@ -35,6 +34,9 @@
         font-size: 18px;
         font-weight: bold;
         padding: 10px;
+        &:hover{
+            color:#F5F5F5;
+        }
     }
     &__copyright {
         color: #fff;

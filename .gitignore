@@ -2,4 +2,6 @@
 /node_modules
 
 temp.html
+temp.txt
 # package-lock.json
+/build

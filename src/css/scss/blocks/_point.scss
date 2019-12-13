@@ -1,0 +1,43 @@
+.point {
+    display: flex;
+    height: 2em;
+    &__time{}
+    &__icon{
+        position: relative;
+        display: inline-block;
+        background-image: none;
+        background-color: transparent;
+        border-radius: 50%;
+        box-shadow: inset 0 0 0 2px $logo_green;
+        width: 1em;
+        height: 1em;
+        margin: 0 15px;
+        vertical-align: middle;
+        // &::after{
+        //     color: $logo_green;
+        //     border: 1px solid;
+        //     content: " ";
+        //     height: 15px;
+        //     left: 50%;
+        //     position: absolute;
+        //     bottom: -15px;
+        //     transform: translateX(-50%);
+        // }
+    }
+    &__city{
+        font-weight: bolder;
+        &::after{
+            content: ", ";
+            white-space: pre;
+        }
+    }
+    &__name{
+        &::after{
+            content: ", ";
+            white-space: pre;
+        }
+    }
+    &__adress{
+        font-style: italic;
+    }
+}

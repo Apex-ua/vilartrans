@@ -7,7 +7,7 @@ const imagemin = require('gulp-imagemin');
 // const concat = require('gulp-concat');
 const ghPages = require('gh-pages');
 const path = require('path');
-// const babel= require('gulp-babel');
+const babel= require('gulp-babel');
 
 const origin = 'src';
 const destination = 'build';
@@ -21,6 +21,11 @@ async function clean(cb) {
 
 function cname(cb){
   src(`${origin}/CNAME`).pipe(dest(destination));
+  cb();
+}
+
+function data(cb){
+  src(`${origin}/data/*.json`).pipe(dest(`${destination}/data`));
   cb();
 }
 
@@ -53,22 +58,23 @@ function images(cb){
 }
 
 
-// function js(cb) {
-//   src(`${origin}/js/lib/**/*.js`).pipe(dest(`${destination}/js/lib`));
+function js(cb) {
+  // src(`${origin}/js/lib/**/*.js`).pipe(dest(`${destination}/js/lib`));
 
-//   src(`${origin}/js/script.js`)
-//   .pipe(babel({
-//     presets: ['@babel/env']
-//   }))  
-//   .pipe(dest(`${destination}/js`));
-//   cb();
-// }
+  src(`${origin}/js/script.js`)
+  .pipe(babel({
+    presets: ['@babel/env']
+  }))  
+  .pipe(dest(`${destination}/js`));
+  cb();
+}
 
 function watcher(cb) {
   watch(`${origin}/**/*.html`).on('change', series(html, browserSync.reload))
   watch(`${origin}/**/*.scss`).on('change', series(css, browserSync.reload))
   watch(`${origin}/images/**/*`).on('change', series(images, browserSync.reload))
-  // watch(`${origin}/**/*.js`).on('change', series(js, browserSync.reload))
+  watch(`${origin}/data/*`).on('change', series(data, browserSync.reload))
+  watch(`${origin}/**/*.js`).on('change', series(js, browserSync.reload))
   cb();
 }
 
@@ -92,4 +98,4 @@ function deploy(cb) {
 
 // exports.default = series(clean, parallel(html, css, js), server, watcher);
 exports.deploy = deploy;
-exports.default = series(clean, images, parallel(html, css, cname), server, watcher);
+exports.default = series(clean, images, parallel(html, css, js, cname, data), server, watcher);
