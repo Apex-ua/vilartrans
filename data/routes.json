@@ -1,0 +1,173 @@
+{
+    "routes": [
+        {
+            "id": "0",
+            "name": "Київ-Прага",
+            "code": "kyiv_prague",
+            "acitve_days": "ПН, СР, ПТ",
+            "points": [
+                {
+                    "id": "0",
+                    "сity": "Київ",
+                    "name": "АС \"Київ\"",
+                    "adress": "вулиця Симона Петлюри, 32 (Центральний залізничний вокзал)",
+                    "arrival": "",
+                    "departure": "20:30",
+                    "trip_day": "0",
+                    "map_url": "https://goo.gl/maps/uwvq4wGanoZLTSsj8"
+                },
+                {
+                    "id": "1",
+                    "сity": "Житомир",
+                    "name": "АС \"Житомир\"",
+                    "adress": "вулиця Київська, 93",
+                    "arrival": "",
+                    "departure": "22:20",
+                    "trip_day": "0",
+                    "map_url": "https://goo.gl/maps/i5bLt9uLKTco5UTH7"
+                },
+                {
+                    "id": "2",
+                    "сity": "Рівне",
+                    "name": "АС \"Рівне\"",
+                    "adress": "вулиця Київська, 40",
+                    "arrival": "",
+                    "departure": "01:00",
+                    "trip_day": "1",
+                    "map_url": "https://goo.gl/maps/MYQQspAy6GJnURNm6"
+                },
+                {
+                    "id": "3",
+                    "сity": "Львів",
+                    "name": "АС \"Львів автовокзал\"",
+                    "adress": "вулиця Стрийська, 109",
+                    "arrival": "",
+                    "departure": "03:45",
+                    "trip_day": "1",
+                    "map_url": "https://goo.gl/maps/DEf6FBTYyXbZPboD8"
+                },
+                {
+                    "id": "4",
+                    "сity": "Шегині",
+                    "name": "",
+                    "adress": "контрольно-пропускний пункт (Україна)",
+                    "arrival": "",
+                    "departure": "04:40",
+                    "trip_day": "1",
+                    "map_url": "https://goo.gl/maps/oz913RFy7YCSRTbCA"
+                },
+                {
+                    "id": "5",
+                    "сity": "Медика",
+                    "name": "",
+                    "adress": "контрольно-пропускний пункт (Польща)",
+                    "arrival": "",
+                    "departure": "05:10",
+                    "trip_day": "1",
+                    "map_url": "https://goo.gl/maps/7b2MczU4TWeAoXsK7"
+                },
+                {
+                    "id": "6",
+                    "сity": "Катовіце",
+                    "name": "plac Szewczyka",
+                    "adress": "",
+                    "arrival": "",
+                    "departure": "09:35",
+                    "trip_day": "1",
+                    "map_url": "https://goo.gl/maps/gQvffyak5Us6LjRM7"
+                },
+                {
+                    "id": "7",
+                    "сity": "Вроцлав",
+                    "name": "",
+                    "adress": "Sucha 1 (Galeria Wroclavia)",
+                    "arrival": "",
+                    "departure": "12:10",
+                    "trip_day": "1",
+                    "map_url": "https://goo.gl/maps/KQ4grGqm3NiqsMUX6"
+                },
+                {
+                    "id": "8",
+                    "сity": "Легніца",
+                    "name": "",
+                    "adress": "Dworcowa 5",
+                    "arrival": "",
+                    "departure": "13:35",
+                    "trip_day": "1",
+                    "map_url": "https://goo.gl/maps/S2amUzYV9zJjB2zv8"
+                },
+                {
+                    "id": "9",
+                    "сity": "Завидув",
+                    "name": "",
+                    "adress": "кордон Польща-Чехія",
+                    "arrival": "",
+                    "departure": "15:00",
+                    "trip_day": "1",
+                    "map_url": "https://goo.gl/maps/ECtDbXHWSwxrbWtW6"
+                },
+                {
+                    "id": "10",
+                    "сity": "Габартице",
+                    "name": "",
+                    "adress": "кордон Чехія-Польща",
+                    "arrival": "",
+                    "departure": "15:05",
+                    "trip_day": "1",
+                    "map_url": "https://goo.gl/maps/J973oAy8hk7xicXw8"
+                },
+                {
+                    "id": "11",
+                    "сity": "Ліберець",
+                    "name": "",
+                    "adress": "ul.Vaňurova 885/5",
+                    "arrival": "",
+                    "departure": "15:50",
+                    "trip_day": "1",
+                    "map_url": "https://goo.gl/maps/Co5SFaRSjacQwuas6"
+                },
+                {
+                    "id": "12",
+                    "сity": "Млада-Болеслав",
+                    "name": "",
+                    "adress": "tř. Václava Klementa 1459",
+                    "arrival": "",
+                    "departure": "16:45",
+                    "trip_day": "1",
+                    "map_url": "https://goo.gl/maps/wG7tnb418QRz3zJW8"
+                },
+                {
+                    "id": "13",
+                    "сity": "Прага",
+                    "name": "",
+                    "adress": "ul. Krzizikova, 4",
+                    "arrival": "",
+                    "departure": "17:40",
+                    "trip_day": "1",
+                    "map_url": "https://goo.gl/maps/Co5SFaRSjacQwuas6"
+                }
+            ]
+        },
+        {
+            "id": "1",
+            "name": "Прага-Київ",
+            "code": "prague_kyiv",
+            "acitve_days": "ПН, СР, ПТ",
+            "points": []
+        },
+        {
+            "id": "1",
+            "name": "Черкаси-Пльзень",
+            "code": "cherkasy_pilsen",
+            "acitve_days": "ПН, СР, ПТ",
+            "points": []
+        },
+        {
+            "id": "1",
+            "name": "Пльзень-Черкаси",
+            "code": "pilsen_cherkasy",
+            "acitve_days": "ПН, СР, ПТ",
+            "points": []
+        }
+    ]
+}

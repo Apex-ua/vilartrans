@@ -5,24 +5,24 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <meta name="title" content="Vilartrans | Міжнародний автобусний перевізник">
-    <meta name="description" content="Міжнародний автобусний перевізник Vilartrans, інформація по рейсах, фото автобусів, контакти і послуги">
+    <meta name="title" content="Vilartrans | Автобусний рейс Київ - Прага: маршрут та розклад руху">
+    <meta name="description" content="Інформація про рейс Київ - Прага перевізника Vilartrans, маршрут та розклад руху">
     <meta property="og:type" content="website">
     <meta property="og:title" content="Vilartrans | Міжнародний автобусний перевізник">
-    <meta property="og:description" content="Міжнародний автобусний перевізник Vilartrans, інформація по рейсах, фото автобусів, контакти і послуги">
-    <meta property="og:url" content="https://vilartrans.com">
-    <meta property="og:image" content="https://vilartrans.com/images/vilartrans.png">
-    <title>Перевізник Vilartrans - Головна сторінка</title>
+    <meta property="og:description" content="Інформація про рейс Київ - Прага перевізника Vilartrans, маршрут та розклад руху">
+    <meta property="og:url" content="http://vilartrans.com">
+    <meta property="og:image" content="http://vilartrans.com/images/vilartrans.png">
+    <title>Перевізник Vilartrans - Рейси</title>
 
     <!-- Global site tag (gtag.js) - Google Analytics -->
-    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-100897269-1"></script>
+    <!-- <script async src="https://www.googletagmanager.com/gtag/js?id=UA-100897269-1"></script>
     <script>
         window.dataLayer = window.dataLayer || [];
         function gtag(){dataLayer.push(arguments);}
         gtag('js', new Date());
 
         gtag('config', 'UA-100897269-1');
-    </script>
+    </script> -->
     <link rel="icon" type="image/png" href="./images/png/vilartrans-icon.png">
     <link href="https://fonts.googleapis.com/css?family=Anton|Roboto+Condensed&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="./css/style.css">
@@ -43,13 +43,13 @@
                     <nav class="navigation">
                         <ul class="navigation__list">
                             <li class="navigation__item">
-                                <a href="./index.html" class="navigation__link navigation__link_current">Головна</a>
+                                <a href="./index.html" class="navigation__link">Головна</a>
                             </li>
                             <li class="navigation__item">
                                 <a href="./tickets.html" class="navigation__link">Придбати квиток</a>
                             </li>
                             <li class="navigation__item">
-                                <a href="./routes.html" class="navigation__link">Рейси</a>
+                                <a href="./routes.html" class="navigation__link navigation__link_current">Рейси</a>
                             </li>
                             <li class="navigation__item">
                                 <a href="./buses.html" class="navigation__link">Наші автобуси</a>
@@ -69,48 +69,15 @@
                 </div>
             </div>
         </div>
-        <div class="block block_header block_under-nav">
-            <div class="block__wrapper">
-                <div class="header">
-                    <div class="header__text">
-                        <h1 class="header__h1">Надійний перевізник для вашої подорожі</h1>
-                    </div>
-                </div>
-            </div>
-        </div>
     </header>
     <main>
-        <section>
-            <div class="block">
-                <div class="block__wrapper">
-                    <div class="routes">
-                        <h2 class="routes__heading">Наші рейси</h3>
-                            <div class="routes__list">
-                                <div class="routes-card routes-card_prague">
-                                    <a href="./routes.html#kyiv_prague" class="routes-card__link">
-                                        <h3 class="routes-card__heading">Київ-Прага</h3>
-                                    </a>
-                                </div>
-                                <div class="routes-card routes-card_kyiv">
-                                    <a href="/routes.html#prague_kyiv" class="routes-card__link">
-                                        <h3 class="routes-card__heading">Прага-Київ</h3>
-                                    </a>
-                                </div>
-                                <div class="routes-card routes-card_pilsen">
-                                    <a href="/routes.html#cherkasy_pilsen" class="routes-card__link">
-                                        <h3 class="routes-card__heading">Черкаси-Пльзень</h3>
-                                    </a>
-                                </div>
-                                <div class="routes-card routes-card_cherkasy">
-                                    <a href="/routes.html#pilsen_cherkasy" class="routes-card__link">
-                                        <h3 class="routes-card__heading">Пльзень-Черкаси</h3>
-                                    </a>
-                                </div>
-                            </div>
-                    </div>
-                </div>
+        <div class="block block_under-nav block_routes">
+            <div class="block__wrapper">
+                <section id="rootRoutes" class="all-routes">
+
+                </section>
             </div>
-        </section>
+        </div>
     </main>
     <footer>
         <div class="footer">
@@ -141,8 +108,7 @@
             </div>
         </div>
     </footer>
-
-
+    <script src="./js/script.js"></script>
 </body>
 
 </html>
