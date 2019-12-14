@@ -153,21 +153,473 @@
             "name": "Прага-Київ",
             "code": "prague_kyiv",
             "acitve_days": "ПН, СР, ПТ",
-            "points": []
+            "points": [
+                {
+                    "id": "1",
+                    "сity": "Прага",
+                    "name": "",
+                    "adress": "ul. Krzizikova, 4",
+                    "arrival": "",
+                    "departure": "15:00",
+                    "trip_day": "0",
+                    "map_url": "https://goo.gl/maps/veP8zKnDKodvY8Ao7"
+                },
+                {
+                    "id": "2",
+                    "сity": "Млада-Болеслав",
+                    "name": "",
+                    "adress": "tř. Václava Klementa 1459",
+                    "arrival": "",
+                    "departure": "16:05",
+                    "trip_day": "0",
+                    "map_url": "https://goo.gl/maps/wG7tnb418QRz3zJW8"
+                },                {
+                    "id": "3",
+                    "сity": "Ліберець",
+                    "name": "",
+                    "adress": "ul.Vaňurova 885/5",
+                    "arrival": "",
+                    "departure": "17:00",
+                    "trip_day": "0",
+                    "map_url": "https://goo.gl/maps/Co5SFaRSjacQwuas6"
+                },
+                {
+                    "id": "4",
+                    "сity": "Габартице",
+                    "name": "",
+                    "adress": "кордон Чехія-Польща",
+                    "arrival": "",
+                    "departure": "17:45",
+                    "trip_day": "0",
+                    "map_url": "https://goo.gl/maps/J973oAy8hk7xicXw8"
+                },
+                {
+                    "id": "5",
+                    "сity": "Завидув",
+                    "name": "",
+                    "adress": "кордон Польща-Чехія",
+                    "arrival": "",
+                    "departure": "17:50",
+                    "trip_day": "0",
+                    "map_url": "https://goo.gl/maps/ECtDbXHWSwxrbWtW6"
+                },
+                {
+                    "id": "6",
+                    "сity": "Легніца",
+                    "name": "",
+                    "adress": "Dworcowa 5",
+                    "arrival": "",
+                    "departure": "19:25",
+                    "trip_day": "0",
+                    "map_url": "https://goo.gl/maps/S2amUzYV9zJjB2zv8"
+                },
+                {
+                    "id": "7",
+                    "сity": "Вроцлав",
+                    "name": "",
+                    "adress": "Sucha 1 (Galeria Wroclavia)",
+                    "arrival": "",
+                    "departure": "20:55",
+                    "trip_day": "0",
+                    "map_url": "https://goo.gl/maps/KQ4grGqm3NiqsMUX6"
+                },
+                {
+                    "id": "8",
+                    "сity": "Катовіце",
+                    "name": "",
+                    "adress": "plac Szewczyka",
+                    "arrival": "",
+                    "departure": "23:50",
+                    "trip_day": "0",
+                    "map_url": "https://goo.gl/maps/gQvffyak5Us6LjRM7"
+                },
+                {
+                    "id": "9",
+                    "сity": "Медика",
+                    "name": "",
+                    "adress": "контрольно-пропускний пункт (Польща)",
+                    "arrival": "",
+                    "departure": "04:05",
+                    "trip_day": "1",
+                    "map_url": "https://goo.gl/maps/7b2MczU4TWeAoXsK7"
+                },
+                {
+                    "id": "10",
+                    "сity": "Шегині",
+                    "name": "",
+                    "adress": "контрольно-пропускний пункт (Україна)",
+                    "arrival": "",
+                    "departure": "06:05",
+                    "trip_day": "1",
+                    "map_url": "https://goo.gl/maps/oz913RFy7YCSRTbCA"
+                },
+                {
+                    "id": "11",
+                    "сity": "Львів",
+                    "name": "АС \"Львів автовокзал\"",
+                    "adress": "вулиця Стрийська, 109",
+                    "arrival": "",
+                    "departure": "07:10",
+                    "trip_day": "1",
+                    "map_url": "https://goo.gl/maps/DEf6FBTYyXbZPboD8"
+                },
+                {
+                    "id": "12",
+                    "сity": "Рівне",
+                    "name": "АС \"Рівне\"",
+                    "adress": "вулиця Київська, 40",
+                    "arrival": "",
+                    "departure": "10:00",
+                    "trip_day": "1",
+                    "map_url": "https://goo.gl/maps/MYQQspAy6GJnURNm6"
+                },
+                {
+                    "id": "13",
+                    "сity": "Житомир",
+                    "name": "АС \"Житомир\"",
+                    "adress": "вулиця Київська, 93",
+                    "arrival": "",
+                    "departure": "12:30",
+                    "trip_day": "1",
+                    "map_url": "https://goo.gl/maps/i5bLt9uLKTco5UTH7"
+                },
+                {
+                    "id": "14",
+                    "сity": "Київ",
+                    "name": "АС \"Київ\"",
+                    "adress": "вулиця Симона Петлюри, 32",
+                    "arrival": "",
+                    "departure": "14:10",
+                    "trip_day": "1",
+                    "map_url": "https://goo.gl/maps/uwvq4wGanoZLTSsj8"
+                }
+            ]
         },
         {
             "id": "1",
             "name": "Черкаси-Пльзень",
             "code": "cherkasy_pilsen",
             "acitve_days": "ПН, СР, ПТ",
-            "points": []
+            "points": [
+                {
+                    "id": "0",
+                    "сity": "Черкаси",
+                    "name": "",
+                    "adress": "перехрестя вулиць Гоголя і Остафія Дашковича (Головне управління статистики у Черкаській області)",
+                    "arrival": "",
+                    "departure": "06:30",
+                    "trip_day": "0",
+                    "map_url": "https://goo.gl/maps/FsADJYPM4a6Lkbn17"
+                },
+                {
+                    "id": "1",
+                    "сity": "Київ",
+                    "name": "АС \"Київ\"",
+                    "adress": "вулиця Симона Петлюри, 32 (Центральний залізничний вокзал)",
+                    "arrival": "",
+                    "departure": "10:20",
+                    "trip_day": "0",
+                    "map_url": "https://goo.gl/maps/uwvq4wGanoZLTSsj8"
+                },
+                {
+                    "id": "2",
+                    "сity": "Житомир",
+                    "name": "АС \"Житомир\"",
+                    "adress": "вулиця Київська, 93",
+                    "arrival": "",
+                    "departure": "12:25",
+                    "trip_day": "0",
+                    "map_url": "https://goo.gl/maps/i5bLt9uLKTco5UTH7"
+                },
+                {
+                    "id": "3",
+                    "сity": "Рівне",
+                    "name": "АС \"Рівне\"",
+                    "adress": "вулиця Київська, 40",
+                    "arrival": "",
+                    "departure": "15:15",
+                    "trip_day": "0",
+                    "map_url": "https://goo.gl/maps/MYQQspAy6GJnURNm6"
+                },
+                {
+                    "id": "4",
+                    "сity": "Львів",
+                    "name": "АС \"Львів автовокзал\"",
+                    "adress": "вулиця Стрийська, 109",
+                    "arrival": "",
+                    "departure": "18:00",
+                    "trip_day": "0",
+                    "map_url": "https://goo.gl/maps/DEf6FBTYyXbZPboD8"
+                },
+                {
+                    "id": "5",
+                    "сity": "Краковець",
+                    "name": "",
+                    "adress": "контрольно-пропускний пункт (Україна)",
+                    "arrival": "",
+                    "departure": "21:15",
+                    "trip_day": "0",
+                    "map_url": "https://goo.gl/maps/6dJhYdpvjedQzV9C7"
+                },
+                {
+                    "id": "6",
+                    "сity": "Корчова",
+                    "name": "",
+                    "adress": "контрольно-пропускний пункт (Польща)",
+                    "arrival": "",
+                    "departure": "21:20",
+                    "trip_day": "0",
+                    "map_url": "https://goo.gl/maps/MoSYYyYFcWiQD1638"
+                },
+                {
+                    "id": "7",
+                    "сity": "Катовіце",
+                    "name": "",
+                    "adress": "Piotra Skargi, 1",
+                    "arrival": "",
+                    "departure": "03:05",
+                    "trip_day": "1",
+                    "map_url": "https://goo.gl/maps/HnsVCV84UPUvGXwG8"
+                },
+                {
+                    "id": "8",
+                    "сity": "Вроцлав",
+                    "name": "",
+                    "adress": "Sucha 1 (Galeria Wroclavia)",
+                    "arrival": "",
+                    "departure": "05:45",
+                    "trip_day": "1",
+                    "map_url": "https://goo.gl/maps/KQ4grGqm3NiqsMUX6"
+                },
+                {
+                    "id": "9",
+                    "сity": "Легніца",
+                    "name": "",
+                    "adress": "Dworcowa 5",
+                    "arrival": "",
+                    "departure": "07:10",
+                    "trip_day": "1",
+                    "map_url": "https://goo.gl/maps/S2amUzYV9zJjB2zv8"
+                },
+                {
+                    "id": "10",
+                    "сity": "Завидув",
+                    "name": "",
+                    "adress": "кордон Польща-Чехія",
+                    "arrival": "",
+                    "departure": "08:55",
+                    "trip_day": "1",
+                    "map_url": "https://goo.gl/maps/ECtDbXHWSwxrbWtW6"
+                },
+                {
+                    "id": "11",
+                    "сity": "Габартице",
+                    "name": "",
+                    "adress": "кордон Чехія-Польща",
+                    "arrival": "",
+                    "departure": "09:00",
+                    "trip_day": "1",
+                    "map_url": "https://goo.gl/maps/J973oAy8hk7xicXw8"
+                },
+                {
+                    "id": "12",
+                    "сity": "Ліберець",
+                    "name": "",
+                    "adress": "ul.Vaňurova 885/5",
+                    "arrival": "",
+                    "departure": "09:55",
+                    "trip_day": "1",
+                    "map_url": "https://goo.gl/maps/Co5SFaRSjacQwuas6"
+                },
+                {
+                    "id": "13",
+                    "сity": "Млада-Болеслав",
+                    "name": "",
+                    "adress": "tř. Václava Klementa 1459",
+                    "arrival": "",
+                    "departure": "10:45",
+                    "trip_day": "1",
+                    "map_url": "https://goo.gl/maps/wG7tnb418QRz3zJW8"
+                },
+                {
+                    "id": "13",
+                    "сity": "Прага",
+                    "name": "",
+                    "adress": "ul. Krzizikova, 4",
+                    "arrival": "",
+                    "departure": "11:55",
+                    "trip_day": "1",
+                    "map_url": "https://goo.gl/maps/veP8zKnDKodvY8Ao7"
+                }
+            ]
         },
         {
             "id": "1",
             "name": "Пльзень-Черкаси",
             "code": "pilsen_cherkasy",
             "acitve_days": "ПН, СР, ПТ",
-            "points": []
+            "points": [
+                {
+                    "id": "0",
+                    "сity": "Прага",
+                    "name": "",
+                    "adress": "ul. Krzizikova, 4",
+                    "arrival": "",
+                    "departure": "11:55",
+                    "trip_day": "0",
+                    "map_url": "https://goo.gl/maps/veP8zKnDKodvY8Ao7"
+                },
+                {
+                    "id": "1",
+                    "сity": "Млада-Болеслав",
+                    "name": "",
+                    "adress": "tř. Václava Klementa 1459",
+                    "arrival": "",
+                    "departure": "10:05",
+                    "trip_day": "0",
+                    "map_url": "https://goo.gl/maps/wG7tnb418QRz3zJW8"
+                },
+                {
+                    "id": "2",
+                    "сity": "Ліберець",
+                    "name": "",
+                    "adress": "ul.Vaňurova 885/5",
+                    "arrival": "",
+                    "departure": "11:00",
+                    "trip_day": "0",
+                    "map_url": "https://goo.gl/maps/Co5SFaRSjacQwuas6"
+                },
+                {
+                    "id": "3",
+                    "сity": "Габартице",
+                    "name": "",
+                    "adress": "кордон Чехія-Польща",
+                    "arrival": "",
+                    "departure": "11:55",
+                    "trip_day": "0",
+                    "map_url": "https://goo.gl/maps/J973oAy8hk7xicXw8"
+                },
+                {
+                    "id": "4",
+                    "сity": "Завидув",
+                    "name": "",
+                    "adress": "кордон Польща-Чехія",
+                    "arrival": "",
+                    "departure": "12:00",
+                    "trip_day": "0",
+                    "map_url": "https://goo.gl/maps/ECtDbXHWSwxrbWtW6"
+                },
+                {
+                    "id": "5",
+                    "сity": "Легніца",
+                    "name": "",
+                    "adress": "Dworcowa 5",
+                    "arrival": "",
+                    "departure": "13:50",
+                    "trip_day": "0",
+                    "map_url": "https://goo.gl/maps/S2amUzYV9zJjB2zv8"
+                },
+                {
+                    "id": "6",
+                    "сity": "Вроцлав",
+                    "name": "",
+                    "adress": "Sucha 1 (Galeria Wroclavia)",
+                    "arrival": "",
+                    "departure": "15:15",
+                    "trip_day": "0",
+                    "map_url": "https://goo.gl/maps/KQ4grGqm3NiqsMUX6"
+                },
+                {
+                    "id": "7",
+                    "сity": "Катовіце",
+                    "name": "",
+                    "adress": "Piotra Skargi, 1",
+                    "arrival": "",
+                    "departure": "17:55",
+                    "trip_day": "0",
+                    "map_url": "https://goo.gl/maps/gQvffyak5Us6LjRM7"
+                },
+                {
+                    "id": "8",
+                    "сity": "Корчова",
+                    "name": "",
+                    "adress": "контрольно-пропускний пункт (Польща)",
+                    "arrival": "",
+                    "departure": "23:50",
+                    "trip_day": "0",
+                    "map_url": "https://goo.gl/maps/MoSYYyYFcWiQD1638"
+                },
+                {
+                    "id": "9",
+                    "сity": "Краковець",
+                    "name": "",
+                    "adress": "контрольно-пропускний пункт (Україна)",
+                    "arrival": "",
+                    "departure": "01:25",
+                    "trip_day": "1",
+                    "map_url": "https://goo.gl/maps/6dJhYdpvjedQzV9C7"
+                },
+                {
+                    "id": "10",
+                    "сity": "Львів",
+                    "name": "АС \"Львів автовокзал\"",
+                    "adress": "вулиця Стрийська, 109",
+                    "arrival": "",
+                    "departure": "03:00",
+                    "trip_day": "1",
+                    "map_url": "https://goo.gl/maps/DEf6FBTYyXbZPboD8"
+                },
+                {
+                    "id": "11",
+                    "сity": "Рівне",
+                    "name": "АС \"Рівне\"",
+                    "adress": "вулиця Київська, 40",
+                    "arrival": "",
+                    "departure": "06:15",
+                    "trip_day": "1",
+                    "map_url": "https://goo.gl/maps/MYQQspAy6GJnURNm6"
+                },
+                {
+                    "id": "12",
+                    "сity": "Новоград-Волинський",
+                    "name": "",
+                    "adress": "АЗК \"WOG\", траса М-06",
+                    "arrival": "",
+                    "departure": "06:15",
+                    "trip_day": "1",
+                    "map_url": "https://goo.gl/maps/FA8y8m8bD32g1Zof6"
+                },
+                {
+                    "id": "13",
+                    "сity": "Житомир",
+                    "name": "АС \"Житомир\"",
+                    "adress": "вулиця Київська, 93",
+                    "arrival": "",
+                    "departure": "08:55",
+                    "trip_day": "1",
+                    "map_url": "https://goo.gl/maps/i5bLt9uLKTco5UTH7"
+                },
+                {
+                    "id": "14",
+                    "сity": "Київ",
+                    "name": "АС \"Київ\"",
+                    "adress": "вулиця Симона Петлюри, 32",
+                    "arrival": "",
+                    "departure": "11:05",
+                    "trip_day": "1",
+                    "map_url": "https://goo.gl/maps/uwvq4wGanoZLTSsj8"
+                },
+                {
+                    "id": "15",
+                    "сity": "Черкаси",
+                    "name": "",
+                    "adress": "перехрестя вулиць Гоголя і Остафія Дашковича (Головне управління статистики у Черкаській області)",
+                    "arrival": "",
+                    "departure": "14:55",
+                    "trip_day": "0",
+                    "map_url": "https://goo.gl/maps/FsADJYPM4a6Lkbn17"
+                }
+            ]
         }
     ]
 }
