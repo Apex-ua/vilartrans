@@ -6,7 +6,6 @@ fetch(routes_json).then(function (response) {
   return response.json();
 }).then(function (response) {
   response.routes.forEach(function (item) {
-    // alert(item.name)
     createRoute(item, routeContainer);
   });
 });
@@ -35,6 +34,7 @@ function createScheduleItem(data) {
   var pointIcon = document.createElement('span');
   var pointCity = document.createElement('span');
   var pointName = document.createElement('span');
+  var pointMapUrl = document.createElement('a');
   var pointAdress = document.createElement('span');
   point.setAttribute('class', 'point');
   pointTime.setAttribute('class', 'point__time');
@@ -54,7 +54,17 @@ function createScheduleItem(data) {
     point.appendChild(pointName);
   }
 
-  point.appendChild(pointAdress);
+  if (data.map_url) {
+    pointMapUrl.setAttribute('href', data.map_url);
+    pointMapUrl.setAttribute('class', 'point__url');
+    pointMapUrl.setAttribute('target', '_blank');
+    pointMapUrl.appendChild(pointAdress);
+    point.appendChild(pointMapUrl);
+  } else {
+    point.appendChild(pointAdress);
+  } // point.appendChild(pointAdress);
+
+
   return point;
 } //   function createCard(inputObject) {
 //     const card = document.createElement('div');
