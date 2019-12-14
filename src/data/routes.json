@@ -69,8 +69,8 @@
                 {
                     "id": "6",
                     "сity": "Катовіце",
-                    "name": "plac Szewczyka",
-                    "adress": "",
+                    "name": "",
+                    "adress": "plac Szewczyka",
                     "arrival": "",
                     "departure": "09:35",
                     "trip_day": "1",
@@ -144,7 +144,7 @@
                     "arrival": "",
                     "departure": "17:40",
                     "trip_day": "1",
-                    "map_url": "https://goo.gl/maps/Co5SFaRSjacQwuas6"
+                    "map_url": "https://goo.gl/maps/veP8zKnDKodvY8Ao7"
                 }
             ]
         },

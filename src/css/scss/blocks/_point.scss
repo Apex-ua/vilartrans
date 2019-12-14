@@ -1,43 +1,44 @@
 .point {
     display: flex;
-    height: 2em;
-    &__time{}
+    justify-content: flex-start;
+    align-items: baseline;
+    flex-wrap: wrap;
+    margin: 10px 0;
+    // &__time{    }
     &__icon{
-        position: relative;
-        display: inline-block;
-        background-image: none;
-        background-color: transparent;
-        border-radius: 50%;
-        box-shadow: inset 0 0 0 2px $logo_green;
-        width: 1em;
-        height: 1em;
-        margin: 0 15px;
-        vertical-align: middle;
-        // &::after{
-        //     color: $logo_green;
-        //     border: 1px solid;
-        //     content: " ";
-        //     height: 15px;
-        //     left: 50%;
-        //     position: absolute;
-        //     bottom: -15px;
-        //     transform: translateX(-50%);
-        // }
+        width: 15px;
+        height: 15px;
+        border-radius: 50% 50% 50% 0;
+        background: $logo_green;
+        transform: rotate(-45deg);
+        left: 50%;
+        top: 50%;
+        margin: 0 10px;
     }
     &__city{
         font-weight: bolder;
         &::after{
-            content: ", ";
+            content: " ";
             white-space: pre;
         }
     }
     &__name{
         &::after{
-            content: ", ";
+            content: " ";
             white-space: pre;
         }
     }
     &__adress{
         font-style: italic;
+        font-size: smaller;
+    }
+    &__url{
+        color: black;
+        text-align: right;
+        width: 100%;
+        @media only screen and (min-width: $medium_devices) {
+            width: unset;
+            text-align: unset;
+        }
     }
 }

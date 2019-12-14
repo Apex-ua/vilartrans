@@ -5,7 +5,6 @@ fetch(routes_json)
   .then(response => {
     response.routes.forEach(
       (item) => {
-        // alert(item.name)
         createRoute(item, routeContainer);
       } 
     )
@@ -45,6 +44,7 @@ function createScheduleItem(data) {
   const pointIcon = document.createElement('span');
   const pointCity = document.createElement('span');
   const pointName = document.createElement('span');
+  const pointMapUrl = document.createElement('a');
   const pointAdress = document.createElement('span');
 
   point.setAttribute('class', 'point');
@@ -71,7 +71,19 @@ function createScheduleItem(data) {
     point.appendChild(pointName);
   }
 
-  point.appendChild(pointAdress);
+  if (data.map_url) {
+    pointMapUrl.setAttribute('href', data.map_url);
+    pointMapUrl.setAttribute('class', 'point__url');
+    pointMapUrl.setAttribute('target', '_blank');
+    pointMapUrl.appendChild(pointAdress);
+    point.appendChild(pointMapUrl);
+  } else {
+    point.appendChild(pointAdress);
+  }
+
+  
+
+  // point.appendChild(pointAdress);
 
   return point;
 }
