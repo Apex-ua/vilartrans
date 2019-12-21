@@ -1,0 +1,18 @@
+.icon {
+    display: inline-block;
+    width: 30px;
+    height: 20px;
+
+    &_flag-ua {
+        background-image: url('../images/svg/ua-flag.svg');
+        background-repeat: no-repeat;
+        background-position: center;
+    }
+
+    &_flag-cz {
+        background-image: url('../images/svg/cz-flag.svg');
+        background-repeat: no-repeat;
+        background-position: center;
+        border: 1px solid black;
+    }
+}

@@ -18,7 +18,10 @@
     <script async src="https://www.googletagmanager.com/gtag/js?id=UA-100897269-1"></script>
     <script>
         window.dataLayer = window.dataLayer || [];
-        function gtag(){dataLayer.push(arguments);}
+
+        function gtag() {
+            dataLayer.push(arguments);
+        }
         gtag('js', new Date());
 
         gtag('config', 'UA-100897269-1');
@@ -35,10 +38,9 @@
                 <div class="upper">
                     <a href="./index.html" class="logo__container">
                         <img src="./images/svg/vilartrans-logo.svg"
-                            alt="Логотип міжнародного автобусного перевізника Vilartrans" 
-                            title="Логотип Vilartrans"
+                            alt="Логотип міжнародного автобусного перевізника Vilartrans" title="Логотип Vilartrans"
                             class="logo__image">
-                    </a> 
+                    </a>
                     <input type='checkbox' id='show-navmenu'></input>
                     <nav class="navigation">
                         <ul class="navigation__list">
@@ -46,7 +48,8 @@
                                 <a href="./index.html" class="navigation__link">Головна</a>
                             </li>
                             <li class="navigation__item">
-                                <a href="./tickets.html" class="navigation__link navigation__link_current">Придбати квиток</a>
+                                <a href="./tickets.html" class="navigation__link navigation__link_current">Придбати
+                                    квиток</a>
                             </li>
                             <li class="navigation__item">
                                 <a href="./routes.html" class="navigation__link">Рейси</a>
@@ -63,7 +66,7 @@
                         <label for='show-navmenu' class='burger__container'>
                             <div class="burger__line-top"></div>
                             <div class="burger__line-centre"></div>
-                            <div class="burger__line-bottom"></div>   
+                            <div class="burger__line-bottom"></div>
                         </label>
                     </div>
                 </div>
@@ -76,24 +79,20 @@
                 <div class="block__wrapper">
                     <section class="tickets">
                         <h1 class="heading heading_big">Пошук квитків на маршрути Vilartrans</h1>
-                        <p class="tickets__description">    
-                            Щоб придбати квиток на наші маршрути скористайтеся формою пошуку нижче, 
-                            оберіть пункти відправлення і прибуття, тип поїздки - в одну сторону або в дві сторони, 
+                        <p class="tickets__description">
+                            Щоб придбати квиток на наші маршрути скористайтеся формою пошуку нижче,
+                            оберіть пункти відправлення і прибуття, тип поїздки - в одну сторону або в дві сторони,
                             оберіть дату, зручну валюту і переходьте до пошуку.
                         </p>
                     </section>
                     <div class="tickets__iframe">
-                        <iframe src="https://ws.bussystem.eu/booking?lang=ua&theme=start&dispatcher=424&no_akce=1&only=bus&period=6" 
-                            frameborder="0" 
-                            marginwidth="0" 
-                            marginheight="0" 
-                            width="750px" 
-                            height="2000px"
-                        >
+                        <iframe
+                            src="https://ws.bussystem.eu/booking?lang=ua&theme=start&dispatcher=424&no_akce=1&only=bus&period=6"
+                            frameborder="0" marginwidth="0" marginheight="0" width="750px" height="2000px">
                         </iframe>
                     </div>
                 </div>
-            </div>    
+            </div>
 
         </section>
     </main>
@@ -114,10 +113,10 @@
                                 </a>
                             </li>
                             <li class="partner__item">
-                                    <a class="partner__link" href="https://busfor.ua/ru/carrier/vilartrans">
-                                        <img class="partner__logo" src="./images/png/busfor_logo.png" alt="busfor">
-                                    </a>
-                                </li>
+                                <a class="partner__link" href="https://busfor.ua/ru/carrier/vilartrans">
+                                    <img class="partner__logo" src="./images/png/busfor_logo.png" alt="busfor">
+                                </a>
+                            </li>
                         </ul>
 
                     </div>
