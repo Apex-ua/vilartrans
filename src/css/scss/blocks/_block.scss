@@ -1,4 +1,4 @@
-.block{ 
+.block {
     &_upper {
         background-color: $main_background;
         top: 0;
@@ -7,19 +7,27 @@
         height: 60px;
         z-index: 1;
     }
+
     &_header {
         background: url('../images/prague-800x523.jpg');
         background-repeat: no-repeat;
         background-position: center;
         background-size: cover;
-        filter:brightness(90%);
+        filter: brightness(90%);
     }
+
     &__wrapper {
         max-width: 1100px;
         margin: 0 auto;
     }
+
     &_under-nav {
         margin-top: 60px;
     }
+
+    &_under-footer {
+        margin-bottom: 30px;
+    }
+
     // &_routes {}
 }

@@ -6,37 +6,37 @@ fetch(routes_json)
     response.routes.forEach(
       (item) => {
         createRoute(item, routeContainer);
-      } 
-    )
-    
-  })
-    
-
-  function createRoute(data, container){
-    const route = document.createElement('article');
-    const routeTitle = document.createElement('h2');
-    const schedule = document.createElement('ul');
-    
-    route.setAttribute('class', 'route');
-    route.setAttribute('id', data.code);
-
-    routeTitle.setAttribute('class', 'heading heading_medium heading_green');
-    routeTitle.textContent = data.name;
-
-    route.appendChild(routeTitle);
-
-    data.points.forEach(
-      item => {
-        let scheduleItem = createScheduleItem(item);
-        schedule.appendChild(scheduleItem);
       }
     )
 
-    schedule.setAttribute('class', 'route__schedule');
+  })
 
-    route.appendChild(schedule);
-    container.appendChild(route);
-  }
+
+function createRoute(data, container) {
+  const route = document.createElement('article');
+  const routeTitle = document.createElement('h2');
+  const schedule = document.createElement('ul');
+
+  route.setAttribute('class', 'route');
+  route.setAttribute('id', data.code);
+
+  routeTitle.setAttribute('class', 'heading heading_medium heading_green');
+  routeTitle.textContent = data.name;
+
+  route.appendChild(routeTitle);
+
+  data.points.forEach(
+    item => {
+      let scheduleItem = createScheduleItem(item);
+      schedule.appendChild(scheduleItem);
+    }
+  )
+
+  schedule.setAttribute('class', 'route__schedule');
+
+  route.appendChild(schedule);
+  container.appendChild(route);
+}
 
 function createScheduleItem(data) {
   const point = document.createElement('li');
@@ -81,24 +81,5 @@ function createScheduleItem(data) {
     point.appendChild(pointAdress);
   }
 
-  
-
-  // point.appendChild(pointAdress);
-
   return point;
 }
-
-//   function createCard(inputObject) {
-//     const card = document.createElement('div');
-//     card.setAttribute('class', 'card');
-//     const imgDiv = document.createElement('div');
-//     imgDiv.setAttribute('class', 'card-image');
-//     imgDiv.setAttribute('id', inputObject.objectNumber);
-//     imgDiv.style.backgroundImage = 'url(' + inputObject.headerImage.url + ')';
-//     const titleDiv = document.createElement('div');
-//     titleDiv.textContent = inputObject.longTitle;
-//     titleDiv.setAttribute('class', 'overlay');
-//     card.appendChild(imgDiv);
-//     card.appendChild(titleDiv);
-//     container.appendChild(card);
-// }

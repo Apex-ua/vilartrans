@@ -1,0 +1,48 @@
+.feedback {
+    padding: 0px 10px;
+
+    &__list {
+        display: grid;
+        column-gap: 10px;
+        row-gap: 10px;
+        grid-template-columns: 1fr;
+    }
+
+    // &__item {}
+}
+
+.quote {
+    font-size: 1.1em;
+    font-style: italic;
+    color: #555555;
+    padding: 10px 30px 10px 60px;
+    border: 2px solid $logo_green;
+    border-radius: 10px;
+    line-height: 1.6;
+    position: relative;
+    background: #ffffff;
+
+    &::before {
+        content: "\201C";
+        color: $logo_green;
+        font-size: 4em;
+        position: absolute;
+        left: 10px;
+        top: -10px;
+    }
+
+    &::after {
+        content: '';
+    }
+
+    // &__text {}
+
+    &__author {
+        display: block;
+        color: #333333;
+        font-style: normal;
+        margin-top: 1em;
+        font-size: 0.9em;
+        text-align: right;
+    }
+}
