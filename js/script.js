@@ -62,21 +62,7 @@ function createScheduleItem(data) {
     point.appendChild(pointMapUrl);
   } else {
     point.appendChild(pointAdress);
-  } // point.appendChild(pointAdress);
-
+  }
 
   return point;
-} //   function createCard(inputObject) {
-//     const card = document.createElement('div');
-//     card.setAttribute('class', 'card');
-//     const imgDiv = document.createElement('div');
-//     imgDiv.setAttribute('class', 'card-image');
-//     imgDiv.setAttribute('id', inputObject.objectNumber);
-//     imgDiv.style.backgroundImage = 'url(' + inputObject.headerImage.url + ')';
-//     const titleDiv = document.createElement('div');
-//     titleDiv.textContent = inputObject.longTitle;
-//     titleDiv.setAttribute('class', 'overlay');
-//     card.appendChild(imgDiv);
-//     card.appendChild(titleDiv);
-//     container.appendChild(card);
-// }
+}
