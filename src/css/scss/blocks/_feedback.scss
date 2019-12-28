@@ -1,14 +1,11 @@
 .feedback {
     padding: 0px 10px;
 
-    &__list {
-        display: grid;
-        column-gap: 10px;
-        row-gap: 10px;
-        grid-template-columns: 1fr;
-    }
+    // &__list {}
 
-    // &__item {}
+    &__item {
+        margin-bottom: 10px;
+    }
 }
 
 .quote {
