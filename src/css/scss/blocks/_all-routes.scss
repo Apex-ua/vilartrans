@@ -1,12 +1,18 @@
-.all-routes{
+.all-routes {
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
     margin: 0 10px;
 }
-.route{
+
+.route {
     @media only screen and (min-width: $medium_devices) {
         width: 600px;
+    }
+
+    &__short-desс {
+        text-align: center;
+        font-style: italic;
     }
 }
